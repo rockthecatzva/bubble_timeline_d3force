@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Reddit Bubble Timeline</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="container">
+
+
+	<div class="columns">
+		<div class="column col-12 center-text top-title">
+			<p>Top Reddit Posts by Year and Sub&#42;</p>
+		</div>
+
+		<div class="column col-12 center-text">
+			<div class="footnote col-6 col-sm-10 centered">&#42; "A submission's score is simply the number of upvotes minus the number of downvotes. If five users like the submission
+				and three users don't it will have a score of 2." via <a href="https://www.reddit.com/wiki/faq" target="_blank">reddit's faq</a></div>
+		</div>
+
+		<div class="column col-12">
+			<div class="column col-3 col-sm-10 centered">
+				<form id="mainform">
+					<div class="instruct">1. Select a year.</div>
+					<div class="centered yearbox">
+						<div class="btn-group">
+							<button class="btn yearselect" value="2017">2017*</button>
+							<button class="btn yearselect" value="2016">2016</button>
+							<button class="btn yearselect" value="2015">2015</button>
+							<button class="btn yearselect" value="2014">2014</button>
+							<button class="btn yearselect" value="2013">2013</button>
+							<button class="btn yearselect" value="2012">2012</button>
+						</div>
+						<div class="year-footnote">*2017 is year to-date</div>
+					</div>
+
+
+					<div class="instruct">2. Choose the number of posts per year.</div>
+					<div class="centered articlecountbox">
+						<div class="btn-group">
+							<button class="btn articleCount" id="plusArtCt" value="plus">+</button>
+							<button disabled id="articleCountIndicator">0</button>
+							<button class="btn articleCount" id="minusArtCt">-</button>
+						</div>
+					</div>
+
+					<div class="instruct">3. Press update button.</div>
+					<input id="submitbutton" class="centered" type="submit" value="Update">
+
+				</form>
+			</div>
+		</div>
+
+
+
+		<div id="hide-box" class="hidden column col-3 col-sm-10 centered">
+			<div class="instruct">4. Click a bubble for more information.</div>
+			<div id="legend-box" class="centered">
+				<p class="legend-title">SIZED BY SCORE (POINTS)</p>
+				<div id="legend-svg"></div>
+				<div id="min-val" class="legend-val"></div>
+				<div id="max-val" class="legend-val"></div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+	<!-- svg group -->
+	<div class="columns">
+		<div class="column col-1"></div>
+		<div id="svg-main" class="column col-10"></div>
+		<div class="column col-1"></div>
+	</div>
+
+</body>
+<script src="dist/bundle.js"></script>
+</html>

@@ -1,0 +1,240 @@
+@font-face {
+    font-family: mainfont;
+    src: url('fonts/GothamNarrow-Book.otf');
+}
+
+body {
+    background-color: #eaeaea;
+    font-family: mainfont;
+    color: black;
+}
+
+
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.title{
+    clear: both;
+}
+
+
+
+.tick line {
+    stroke: #c5c5c5;
+}
+
+.bubble-highlight {
+    fill: blue;
+    stroke-width: 1;
+    stroke: #eaeaea;    
+}
+
+.bubble {
+    stroke: #eaeaea;
+    fill: black;
+    stroke-width: 1;
+   
+}
+
+.yearselect {
+    background-color: white;
+    border-color: #50596c;
+    color: #50596c;
+}
+
+.greyout {
+    color: grey;
+    background-color: #eaeaea;
+}
+
+.btn-group{
+    margin-bottom: 5px;
+}
+
+#svg-header {
+    background-color: #eaeaea;
+    height: 140px;
+}
+
+#svg-main {
+    height: 1000px;
+    position: relative;
+    overflow: visible;
+}
+
+
+.show {
+    display: inherit;
+}
+
+
+.horiz-line{
+    stroke: black;
+}
+
+.subreddit-label{
+    color: blue;
+    font-size: 1.3em;
+}
+
+.year-footnote{
+    font-size: 0.8em;
+}
+
+#articleCountIndicator, #submitbutton{
+    background-color: white;
+    color: #50596c;
+}
+
+#articleCountIndicator{
+    width: 3em;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    
+}
+
+.articleCount{
+    color: #50596c;
+    border-color: #50596c;
+    width: 2em;
+}
+
+.center-text{
+    text-align: center;
+}
+
+
+.bubcontainer{
+    background-color: white;
+    y: -100%;
+}
+
+.bubdate, .bubpoints {
+    text-align: center;
+}
+
+.instruct{
+    padding-top: 1em;
+    font-size: 1.2em;    
+}
+
+.fullw{
+    width: 100%;
+}
+
+.yearbox{
+    width: 275px;
+}
+
+.articlecountbox{
+    width: 7em;
+}
+
+
+
+.tick{
+    font-size: 1.2em;
+}
+
+
+
+ #tooltip {
+      width: 200px;
+      background-color: white;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+
+
+
+    .hidden {
+      display: none;
+    }
+
+    #tooltip p {
+      margin: 0;
+      font-size: 0.8em;
+      
+    }
+    
+    .arrow-down {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        
+        border-top: 20px solid #f00;
+      }
+
+    .tool-score{
+        float: right;
+    }
+
+    #tool-link{
+        float: right;
+    }
+
+
+    .divider{
+        margin: 5px;
+    }
+
+    .close-container{
+        position: relative;
+        height: 20px;
+    }
+
+.legend-label{
+    text-align: center;
+}
+
+#legend-box{
+    width: 160px;
+    height: 120px;
+    border: solid 1px;
+    margin-top: 1em;
+
+    
+      background-color: white;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+}
+
+.legend-title{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+ .legend-val{
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#legend-svg circle{
+    fill: #eaeaea;
+    stroke: black;
+    stroke-dasharray: 2, 2;
+}
+
+.footnote{
+    color: grey;
+}
+
+.top-title{
+    padding-bottom: 0em;
+    font-size: 3em;
+    padding-top: 0.8em;
+
+}
